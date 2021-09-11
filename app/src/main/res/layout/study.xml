@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_baseline_account_box_24">
+        </ImageView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/ten"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Nguyen Van A"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/maSV"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/ten"
+                android:layout_marginTop="0dp"
+                android:text="AT170088"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/maSV"
+                android:layout_marginTop="0dp"
+                android:text="An Toàn Thông Tin"
+                android:textColor="#00ff00"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:columnCount="4"
+        android:rowCount="4">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            >
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_baseline_calendar_today_24"
+                android:background="#ffffff">
+
+            </ImageButton>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="1dp"
+                android:text="Xem lich Hoc"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center">
+
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="110dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_baseline_assignment_ind_24"
+                android:background="#fffff">
+
+            </ImageButton>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="1dp"
+                android:gravity="center"
+                    android:text="Thông Tin"
+                android:textColor="@color/black"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="110dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#fffff"
+                android:src="@drawable/ic_baseline_comment_bank_24">
+
+            </ImageButton>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="1dp"
+                android:gravity="center"
+                android:text="Nộp Tiền"
+                android:textColor="@color/black"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="110dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#ffff"
+                android:src="@drawable/ic_baseline_business_center_24">
+
+            </ImageButton>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="1dp"
+                android:gravity="center"
+                android:text="Xem Điểm"
+                android:textColor="@color/black"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="102dp"
+            android:layout_height="110dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#ffff"
+                android:src="@drawable/ic_baseline_fact_check_24">
+
+            </ImageButton>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="1dp"
+                android:gravity="center"
+                android:text="Đăng Kí Học"
+                android:textColor="@color/black"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </GridLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="46dp"
+            android:layout_marginEnd="49dp"
+            android:layout_toStartOf="@+id/seach"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_baseline_home_24"
+            android:background="#ffff">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/seach"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="58dp"
+            android:layout_toStartOf="@+id/set_up"
+            android:src="@drawable/ic_baseline_search_24"
+            android:background="#ffff">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/set_up"
+            android:layout_width="67dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="43dp"
+            android:src="@drawable/ic_baseline_settings_24"
+            tools:layout_editor_absoluteX="320dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:background="#ffff">
+
+        </ImageButton>
+    </RelativeLayout>
+</LinearLayout>
